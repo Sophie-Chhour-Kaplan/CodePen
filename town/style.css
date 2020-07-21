@@ -1,0 +1,565 @@
+:root {
+  --body: #FFEFD3;
+  --sky: #A30;
+  --sun: #cd7f32;
+  --plant: var(--h5); 
+  
+  --h1: #001B23;
+  --pot: #FFEFD3;
+  --h1-colors: #FFEFD3;
+  
+  --h2: #FFEFD3;
+  --shade1: #294C60;
+  --shade2: #1f3947;
+  --h2-door: #001B23;
+  
+  --h3: #001B23;
+  --h3-colors: #FFEFD3;
+  --h3-shutters: #ADB6C4;
+  
+  --h4: #FFEFD3;
+  --h4-colors: #294C60;
+  --h4-railing: #294C60;
+  
+  --h5: #ADB6C4;
+  --h5-color1: #FFEFD3;
+  --h5-color2: #001B23;
+}
+
+body {
+  background-color: var(--body);
+}
+
+.container {
+  background-color: var(--sky); 
+  width: 450px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.scenery,
+.mountain-region,
+.sun,
+.town, 
+.plant,
+.left,
+.h1,
+.h1-plant,
+.pot, 
+.h1-leaves, 
+.h1-leaf-1,
+.h1-leaf-2,
+.h1-leaf-3,
+.window-h1,
+.door-h1,
+.door-window-h2,
+.doorknob-h1,
+.h2, 
+.shades,
+.trapezoid-shade,
+.rect-shade,
+.door-h2,
+.door-window-h2,
+.window-h2,
+.circle-h2,
+.right, 
+.h3, 
+.base-h3,
+.base-h3-windows,
+.roof-h3,
+.roof-h3-windows,
+.h4, 
+.base-h4,
+.h4-entrance,
+.door-h4,
+.railing-h4,
+.steps-h4,
+.base-h4-windows,
+.roof-h4,
+.h5,
+.base-h5,
+.h5-entrance,
+.h5-door,
+.h5-door-divide,
+.h5-stair-1,
+.h5-stair-2,
+.h5-windows,
+.roof-h5,
+.roof-h5-window {
+  position: absolute;
+}
+
+.scenery {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+.mountain-region {
+  background-color: #407951;
+  width: 100%;
+  height: 110%;
+  top: -10%;
+  clip-path: polygon(29% 0, 74% 60%, 82% 100%, 18% 100%, 9% 53%);
+}
+*/
+
+.sun {
+  background-color: var(--sun);
+  width: 15.56%;
+  height: 35%;
+  border-radius: 50%;
+  left: 70%;
+  top: -17.5%;
+}
+
+.town {
+  background-color: transparent;
+  width: 90%;
+  height: 70%;
+  top: 40%;
+  left: 5%;
+}
+
+/*
+.plant{
+  background-color: var(--plant);
+  width: 12%;
+  height: 18%;
+  content: '';
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 82%;
+  border-radius: 50% 50% 15% 15%;
+}
+*/
+
+.left {
+  background-color: transparent;
+  width: 45%;
+  height: 100%;
+}
+
+.right {
+  background-color: transparent;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.h1 {
+  background-color: var(--h1);
+  width: 40%;
+  height: 100%;
+}
+
+.h1-plant {
+  width: 30%;
+  height: 20%;
+  top: 80%;
+  left: 55%;
+}
+
+.pot {
+  background-color: var(--pot); 
+  width: 60%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 0 0 30% 30%;
+}
+
+.h1-leaves {
+  width: 90%;
+  height: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.h1-leaf-1 {
+  border-radius: 50% 0; 
+  background-color: var(--plant);
+  width: 60%; 
+  height: 60%;
+  left: 50%;
+  top: 40%;
+}
+
+.h1-leaf-2 {
+  border-radius: 80% 0; 
+  background-color: var(--plant);
+  width: 70%; 
+  height: 40%;
+  left: 25%;
+  transform: translate(-50%, 0);
+  top: 30%;
+  transform: rotate(120deg);
+} 
+
+.h1-leaf-3 {
+  border-radius: 70% 0; 
+  background-color: var(--plant);
+  width: 60%; 
+  height: 60%;
+  top: 43%;
+  left: -10%;
+  transform: rotate(220deg);
+}
+
+.window-h1 {
+  display: grid;
+  width: 60%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 20%);
+  grid-gap: 2.1vh; 
+  left: 20%;
+  top: 8%;
+}
+
+.window-h01 {
+  position: relative;
+  height: 100%;
+  background-color: var(--h1-colors);
+}
+
+/*
+.window-h1-vl {
+  border-left: 2px solid var(--h1-colors);
+  height: 100%;
+  position: absolute;
+  left: 49%;
+}
+
+.window-h1-hl {
+  border-bottom: 1.5px solid var(--h1-colors);
+  width: 110%;
+  position: relative;
+  left: -5%;
+  top: 100%;
+} 
+*/
+
+.door-h1 {
+  background-color: var(--h1-colors);
+  width: 23%;
+  height: 23%;
+  top: 77%;
+  left: 16%;
+}
+
+.doorknob-h1 {
+  background-color: var(--h1);
+  width: 20%;
+  height: 10%;
+  border-radius: 50%;
+  top: 50%;
+  left: 65%;
+}
+
+.h2 {
+  background-color: var(--h2);
+  width: 60%;
+  height: 60%;
+  left: 40%;
+  top: 40%;
+}
+
+.shades {
+  width: 110%;
+  height: 30%;
+  left: -5%;
+  top: 30%;
+}
+
+.trapezoid-shade {
+  border-bottom: 2vw solid var(--shade1);
+  border-right: 1vh solid transparent; 
+  border-left: 1vh solid transparent;
+  height: 0;
+  width: 12.75vw;
+}
+
+.rect-shade {
+  background-color: var(--shade2);
+  width: 100%;
+  height: 30%;
+  top: 69%;
+}
+
+.door-h2 {
+  background-color: var(--h2-door);
+  height: 40%;
+  width: 20%;
+  top: 60%;
+  left: 12%;
+}
+
+.door-window-h2 {
+  display: grid;
+  width: 1.5vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2vw;
+  grid-column-gap: .35rem;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.door-window-h02 {
+  background-color: var(--h5);
+}
+
+.window-h2 {
+  background-color: var(--shade1);
+  width: 60%;
+  height: 27%;
+  top: 65%;
+  left: 36%;
+}
+
+.circle-h2 {
+  background-color: var(--h2-door);
+  width: 12%;
+  height: 15%;
+  border-radius: 50%;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.h3,.h4,.h5 {
+  top: 10%;
+}
+
+.h3 {
+  width: 33.33%;
+  height: 90%;
+}
+
+.base-h3 {
+  background-color: var(--h3);
+  width: 100%;
+  height: 75%;
+  top: 25%;
+}
+
+.base-h3-windows {
+  display: grid;
+  width: 11vh;
+  grid-template-columns: 8fr 8fr 8fr;
+  grid-template-rows: 3vh 3vh 3vh;
+  grid-gap: 0.6rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 12%;
+}
+
+.base-h3-window {
+  background-color: var(--h3-colors);
+  border-left: 2.5px solid var(--h3-shutters);
+  border-right: 2.5px solid var(--h3-shutters);
+}
+
+.roof-h3 {
+  border-bottom: 3.75vw solid var(--h3-colors);
+  border-left: 3vh solid transparent;
+  border-right: 3vh solid transparent;
+  width: 4.35vw;
+  height: 0;
+}
+
+/*
+.roof-h3-windows {
+  display: grid;
+  width: 5vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2vh;
+  grid-gap: 0.3rem;
+  left: 50%;
+  transform: translate(-50%, 145%);
+}
+
+.roof-h3-window {
+  background-color: black;
+}
+*/
+
+.h4 {
+  width: 33.33%;
+  height: 90%;
+  left: 33.33%;
+}
+
+.base-h4 {
+  background-color: var(--h4);
+  width: 100%;
+  height: 75%;
+  top: 25%;
+}
+
+.h4-entrance {
+  width: 50%;
+  height: 58%;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.door-h4 {
+  background-color: var(--h4-colors);
+  width: 64%;
+  height: 45%;
+  border-radius: 40% 40% 0 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.railing-h4 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 7.5vh;
+  grid-gap: 1.4rem;
+  top: 34%;
+}
+
+.railing-h04 {
+  background-color: var(--h4-railing);
+}
+
+.steps-h4 {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1vh 1vh 1vh 1vh 1vh 1vh;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.step-h4 {
+  background-color: var(--h4-railing);
+  border-bottom: 2px solid var(--h4);
+}
+
+.base-h4-windows {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1.5vh 1.5vh;
+  grid-gap: 0.5rem;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 12%;
+}
+
+.base-h4-window {
+  background-color: var(--h4-colors);
+  border-radius: 5%
+}
+
+.roof-h4 {
+  border-bottom: 3.75vw solid var(--h4-colors);
+  border-left: 3vh solid transparent;
+  border-right: 3vh solid transparent;
+  width: 4.35vw;
+  height: 0;
+}
+
+.h5 {
+  width: 33.33%;
+  height: 90%;
+  left: 66.66%;
+}
+
+.base-h5 {
+  background-color: var(--h5);
+  width: 100%;
+  height: 75%;
+  top: 25%;
+}
+
+.h5-entrance {
+  width: 60%;
+  height: 40%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.h5-door {
+  background-color: var(--h5-color1);
+  width: 55%;
+  height: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+}
+
+.h5-door-divide {
+  background-color: var(--h5);
+  width: 5%;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.h5-stair-1 {
+  background-color: var(--h5-color2);
+  width: 90%;
+  height: 10%;
+  left: 5%;
+  top: 80%;
+}
+
+.h5-stair-2 {
+  background-color: var(--h5-color2);
+  width: 100%;
+  height: 10%;
+  top: 90%;
+}
+
+.h5-windows {
+  display: grid;
+  width: 75%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2.7vh 2.7vh;
+  grid-gap: 0.65rem;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.h5-window {
+  background-color: var(--h5-color1);
+  //border-bottom: 2px solid var(--h5-color2);
+  border-radius: 5%;
+}
+
+.roof-h5 {
+  border-bottom: 3.75vw solid var(--h5-color2) ;
+  border-left: 3vh solid transparent;
+  border-right: 3vh solid transparent;
+  width: 4.35vw;
+  height: 0;
+}
+
+/*
+.roof-h5-window {
+  background-color: white;
+  width: 5vh;
+  height: 3vh;
+  top: 2.3vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50% 50% 0 0;
+  border: 1px solid black;
+}
+*/
