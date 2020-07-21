@@ -1,2 +1,2 @@
-# CodePen
-Art made with pure code 
+Art I've made on the CodePen platform using pure HTML, CSS, and Javascript
+
