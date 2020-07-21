@@ -1,2 +1,4 @@
-Art I've made on the CodePen platform using pure HTML, CSS, and Javascript
+Art I've made using pure HTML, CSS, and Javascript
+
+All art is hosted on the CodePen platform
 
