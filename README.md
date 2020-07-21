@@ -1,4 +1,4 @@
-Vector graphics and animations I've created using pure HTML, CSS, and Javascript
+Vector graphics and animations I've created using pure HTML, CSS, and JavaScript
 
 In chronological order:
   
