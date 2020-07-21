@@ -1,9 +1,9 @@
-Art I've made using pure HTML, CSS, and Javascript
+Vector graphics and animations I've created using pure HTML, CSS, and Javascript
 
 In chronological order:
   
-  1. 
-  2.
+  1. Animated train moving through a mountainous island 
+  2. String of blue houses living under a red sky 
 
-All art can be found on the CodePen platform. 
+
 
